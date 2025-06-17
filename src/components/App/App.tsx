@@ -28,7 +28,7 @@ export interface Photos {
   };
 }
 
-interface ResultsData {
+export interface ResultsData {
   results: Photos[];
   total_pages: number;
 }

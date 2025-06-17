@@ -1,13 +1,13 @@
 import axios from "axios";
-import type { Photos } from "../components/App/App";
+import type { ResultsData } from "../components/App/App";
 
 const key = "8OOPE-y2t239SntdN150iAqUHy5HuwDQFrKAKj6BEho";
 
 const handleGetPhotos = async (
   query: string,
   page: number
-): Promise<Photos> => {
-  const selectedPhotos = await axios.get<Photos>(
+): Promise<ResultsData> => {
+  const selectedPhotos = await axios.get<ResultsData>(
     "https://api.unsplash.com/search/photos",
     {
       params: {
