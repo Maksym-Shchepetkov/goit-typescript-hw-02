@@ -1,0 +1,45 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #000000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+}
+
+input {
+  outline: none;
+
+  cursor: url("/magnify.svg") 10 10, pointer;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+img {
+  display: block;
+}
+
+#text {
+  display: none;
+}

@@ -1,0 +1,45 @@
+.wrap {
+  background-color: #bcaaa4;
+  padding: 40px 0;
+}
+
+.btn {
+  font-family: "Kavoon", cursive;
+  font-size: 14px;
+  font-weight: 400;
+
+  display: flex;
+  color: #ffffff;
+  background-color: #ffa500;
+  border-color: #ec407a;
+  border: 1px solid;
+  padding: 10px 15px;
+  border-radius: 0.5rem;
+  outline: none;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.4),
+    0 -0.3rem 0.6rem rgba(0, 0, 0, 0.2) inset;
+  transition: box-shadow 64ms ease-out;
+  position: relative;
+  margin: 0 auto;
+}
+
+.btn::after {
+  content: "";
+  background-color: #ffffff;
+  width: 75%;
+  height: 12.5%;
+  position: absolute;
+  top: 0.15rem;
+  left: 12.5%;
+  border-radius: 50%;
+  filter: blur(0.15rem);
+  transition: opacity 64ms ease-out;
+}
+
+.btn:active {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.4), 0 0.4rem 1rem rgba(0, 0, 0, 0.3) inset;
+}
+
+.btn:active::after {
+  opacity: 0;
+}
